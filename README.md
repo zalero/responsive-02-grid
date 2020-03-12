@@ -174,7 +174,7 @@ Ajoutez une media query pour les très grands écrans pour afficher le tableau c
 
 ## Ressources
 
-- Reférence : [CSS Tricks Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- Reférence : [CSS Tricks Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - Outil : [Grid generator](https://grid.layoutit.com/)
 - Entraînement [Grid Garden](https://cssgridgarden.com/#fr)
 - Exemple : [grid-auto-flow: dense](https://codepen.io/imjuangarcia/pen/bzpYyj)
