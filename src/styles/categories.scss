@@ -1,0 +1,14 @@
+.el {
+    background-color: lightgray;
+}
+
+$types: alkaliMetal lanthanide nobleGas transitionMetal postTransitionMetal
+    alkalineEarthMetal actinide metalloid otherNonMetal;
+
+@each $type in $types {
+    .el--#{$type} {
+        background-color: hsl(
+            index($types, $type) * (360deg / length($types)) 75% 75%
+        );
+    }
+}
