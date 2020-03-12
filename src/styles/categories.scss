@@ -5,7 +5,7 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding: 5px;
-    @include landscape {
+    @include screen_large {
         margin: 2px;
     }
 }
@@ -18,5 +18,18 @@ $types: alkaliMetal lanthanide nobleGas transitionMetal postTransitionMetal
         background-color: hsl(
             index($types, $type) * (360deg / length($types)) 75% 75%
         );
+    }
+}
+@include screen_large {
+    @for $i from 1 through 7 {
+        [data-period="#{$i}"] {
+            grid-row: #{$i};
+        }
+    }
+
+    @for $i from 1 through 18 {
+        [data-group="#{$i}"] {
+            grid-column: #{$i};
+        }
     }
 }
