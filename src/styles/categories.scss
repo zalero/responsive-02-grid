@@ -1,5 +1,13 @@
 .el {
     background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 5px;
+    @include landscape {
+        margin: 2px;
+    }
 }
 
 $types: alkaliMetal lanthanide nobleGas transitionMetal postTransitionMetal
